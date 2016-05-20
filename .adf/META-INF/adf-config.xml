@@ -24,6 +24,61 @@
         oracle.adf.view.rich.change.MDSDocumentChangeManager
       </persistent-change-manager-class>
     </persistent-change-manager>
+    <taglib-config>
+      <taglib uri="http://xmlns.oracle.com/adf/faces/rich">
+        <tag name="richTextEditor">
+          <attribute name="editMode">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+        </tag>
+        <tag name="column">
+          <attribute name="displayIndex">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+          <attribute name="frozen">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+          <attribute name="noWrap">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+          <attribute name="selected">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+          <attribute name="visible">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+          <attribute name="width">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+        </tag>
+        <tag name="panelSplitter">
+          <attribute name="collapsed">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+          <attribute name="splitterPosition">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+        </tag>
+      </taglib>
+    </taglib-config>
   </adf-faces-config>
   <adf-mds-config xmlns="http://xmlns.oracle.com/adf/mds/config">
     <mds-config xmlns="http://xmlns.oracle.com/mds/config" version="11.1.1.000">

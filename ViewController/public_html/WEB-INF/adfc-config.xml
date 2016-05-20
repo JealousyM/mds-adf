@@ -3,4 +3,9 @@
   <view id="index">
     <page>/index.jspx</page>
   </view>
+  <managed-bean id="__1">
+    <managed-bean-name>MdsBean</managed-bean-name>
+    <managed-bean-class>by.perevertkin.mds.view.beans.MdsBean</managed-bean-class>
+    <managed-bean-scope>pageFlow</managed-bean-scope>
+  </managed-bean>
 </adfc-config>

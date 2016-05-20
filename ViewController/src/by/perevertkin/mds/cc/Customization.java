@@ -1,13 +1,16 @@
 package by.perevertkin.mds.cc;
 
+import oracle.adf.share.ADFContext;
+
+import oracle.adf.share.security.SecurityContext;
+
 import oracle.mds.core.MetadataObject;
 import oracle.mds.core.RestrictedSession;
 import oracle.mds.cust.CacheHint;
 import oracle.mds.cust.CustomizationClass;
 
 public class Customization extends CustomizationClass {
-    private static final String DEFAULT_LAYER_NAME = "industry";
-    private String mLayerName = DEFAULT_LAYER_NAME;
+    private String mLayerName;
 
     public Customization() {
         super();
@@ -25,12 +28,10 @@ public class Customization extends CustomizationClass {
 
     @Override
     public String[] getValue(RestrictedSession restrictedSession, MetadataObject metadataObject) {
-        // This needs to return the appropriate value at runtime.
-        return new String[] { "financial" };
+            ADFContext adfCtx = ADFContext.getCurrent();  
+            SecurityContext secCntx = adfCtx.getSecurityContext();  
+            String user = secCntx.getUserName();  
+        return new String[] { user };
     }
 
-    @Override
-    protected String generateIDPrefix(RestrictedSession restrictedSession, MetadataObject metadataObject) {
-        return "I";
-    }
 }
