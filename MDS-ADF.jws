@@ -2,6 +2,9 @@
 <jws:workspace xmlns:jws="http://xmlns.oracle.com/ide/project">
    <hash n="adrs-workspace-properties">
       <value n="adrs-instance-binding" v="DefaultServer"/>
+      <url n="adrs-mds-repos-override-dir" protocol="file" path="/D:/work/mds/"/>
+      <value n="deploy-timeout" v="0"/>
+      <value n="runtime-application-name" v="MDS-ADF"/>
    </hash>
    <value n="application-package-prefix" v="by.perevertkin.mds"/>
    <value n="appTemplateId" v="adfWebappApplicationTemplate"/>

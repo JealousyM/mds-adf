@@ -10,7 +10,7 @@ import oracle.mds.cust.CacheHint;
 import oracle.mds.cust.CustomizationClass;
 
 public class Customization extends CustomizationClass {
-    private String mLayerName;
+    private String mLayerName="myLayer";
 
     public Customization() {
         super();
