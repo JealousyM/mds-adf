@@ -1,0 +1,27 @@
+<!--This file defines all valid customization layer values for use in Customization Role for this application. This file completely overrides layer values configured at global level. Refer to ORACLE_HOME/jdeveloper/jdev/CustomizationLayerValues.xml for more details on using this file to define layer values.-->
+<cust-layers xmlns="http://xmlns.oracle.com/mds/dt">
+  <cust-layer name="site" id-prefix="s">
+    <!-- Generated id-prefix would be "s1" and "s2" for values 
+	"site1" and "site2".-->
+    <cust-layer-value value="site1" display-name="Site One" id-prefix="1"/>
+    <cust-layer-value value="site2" display-name="Site Two" id-prefix="2"/>
+    <!-- Generated id-prefix would be "s" for value "site"
+	   since no prefix was specified on the value -->
+    <!-- ADF SiteCC always returns the value as "site" -->
+    <cust-layer-value value="site" display-name="Site"/>
+  </cust-layer>
+  <!-- Customization layers that are only meant for runtime usage can
+   be excluded in design time by defining size as "no_values"-->
+  <cust-layer name="runtime_only_layer" value-set-size="no_values"/>
+  <cust-layer name="user" value-set-size="large">
+    <!-- Generated id-prefix would be "us1" and "us2" for values "user1"
+	 and "user2" since no prefix was defined per-name level -->
+    <cust-layer-value value="user1" display-name="First User" id-prefix="us1"/>
+    <cust-layer-value value="user2" display-name="Second User" id-prefix="us2"/>
+    <!-- Generated id-prefix would be "useradmin" and "userguest" for
+	 values "admin" and "guest" since no prefix was defined at both
+	 layer level and name level -->
+    <cust-layer-value value="admin" display-name="Administrator"/>
+    <cust-layer-value value="guest"/>
+  </cust-layer>
+</cust-layers>
