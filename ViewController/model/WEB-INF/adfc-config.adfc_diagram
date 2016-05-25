@@ -17,4 +17,49 @@
       <property
          name="x">478.0</property>
    </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase6"
+      from="View2"
+      to="View5">
+      <property
+         name="fromOutcome">toMdsCleaner</property>
+      <property
+         name="sdm:polyPoints">R50,519.0,276.94824,736.0,316.89648,L50</property>
+   </ControlFlowCase>
+   <View
+      id="View5">
+      <property
+         name="activityId">mdsCleaner</property>
+      <property
+         name="page">/mdsCleaner.jspx</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>mdsCleaner&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">317.24707</property>
+      <property
+         name="x">777.0</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase6"
+      from="View2"
+      to="View5">
+      <property
+         name="fromOutcome">toMdsCleaner</property>
+      <property
+         name="sdm:polyPoints">R50,519.0,276.94824,736.0,316.89648,L50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase10"
+      from="View5"
+      to="View2">
+      <property
+         name="fromOutcome">back</property>
+      <property
+         name="sdm:polyPoints">L54,735.3601,320.39648,519.0,280.44824,R54</property>
+   </ControlFlowCase>
 </SDM>

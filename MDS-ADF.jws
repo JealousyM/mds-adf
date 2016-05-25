@@ -49,8 +49,8 @@
                   </hash>
                </list>
             </hash>
-            <url n="earURL" path="deploy/MDS-ADF_Project1_MDS-ADF.ear"/>
-            <value n="enterpriseAppName" v="MDS-ADF_Project1_MDS-ADF"/>
+            <url n="earURL" path="deploy/MDS-ADF-Application.ear"/>
+            <value n="enterpriseAppName" v="MDS-ADF-Application"/>
             <hash n="fileGroups">
                <list n="groups">
                   <hash>

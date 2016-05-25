@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="main-btf">
+    <default-activity>main</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <managed-bean id="__5">
+      <managed-bean-name>MdsBean</managed-bean-name>
+      <managed-bean-class>by.perevertkin.mds.view.beans.MdsBean</managed-bean-class>
+      <managed-bean-scope>pageFlow</managed-bean-scope>
+    </managed-bean>
+    <view id="main">
+      <page>/fragments/main.jsff</page>
+    </view>
+    <view id="mdsCleaner">
+      <page>/fragments/mdsCleaner.jsff</page>
+    </view>
+    <control-flow-rule id="__3">
+      <from-activity-id>main</from-activity-id>
+      <control-flow-case id="__4">
+        <from-outcome>mdsCleaner</from-outcome>
+        <to-activity-id>mdsCleaner</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__6">
+      <from-activity-id>mdsCleaner</from-activity-id>
+      <control-flow-case id="__7">
+        <from-outcome>back</from-outcome>
+        <to-activity-id>main</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

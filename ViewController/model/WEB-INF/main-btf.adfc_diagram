@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">main</property>
+      <property
+         name="page">/fragments/main.jsff</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>main&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">231.94824</property>
+      <property
+         name="x">220.0</property>
+      <property
+         name="pageFragment">true</property>
+   </View>
+   <View
+      id="View5">
+      <property
+         name="activityId">mdsCleaner</property>
+      <property
+         name="page">/fragments/mdsCleaner.jsff</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>mdsCleaner&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">283.24707</property>
+      <property
+         name="x">571.0</property>
+      <property
+         name="pageFragment">true</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase6"
+      from="View2"
+      to="View5">
+      <property
+         name="fromOutcome">mdsCleaner</property>
+      <property
+         name="sdm:polyPoints">R50,261.0,231.59766,530.0,282.89648,L50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase7"
+      from="View5"
+      to="View2">
+      <property
+         name="fromOutcome">back</property>
+      <property
+         name="sdm:polyPoints">L54,529.3377,286.39648,261.0,235.09766,R54</property>
+   </ControlFlowCase>
+</SDM>

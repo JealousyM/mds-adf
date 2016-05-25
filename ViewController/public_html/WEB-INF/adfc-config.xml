@@ -3,9 +3,21 @@
   <view id="index">
     <page>/index.jspx</page>
   </view>
-  <managed-bean id="__1">
-    <managed-bean-name>MdsBean</managed-bean-name>
-    <managed-bean-class>by.perevertkin.mds.view.beans.MdsBean</managed-bean-class>
-    <managed-bean-scope>pageFlow</managed-bean-scope>
-  </managed-bean>
+  <view id="mdsCleaner">
+    <page>/mdsCleaner.jspx</page>
+  </view>
+  <control-flow-rule id="__4">
+    <from-activity-id>index</from-activity-id>
+    <control-flow-case id="__5">
+      <from-outcome>toMdsCleaner</from-outcome>
+      <to-activity-id>mdsCleaner</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__7">
+    <from-activity-id>mdsCleaner</from-activity-id>
+    <control-flow-case id="__8">
+      <from-outcome>back</from-outcome>
+      <to-activity-id>index</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
 </adfc-config>

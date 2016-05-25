@@ -3,21 +3,13 @@
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <f:view>
-        <af:document title="index.jspx" id="d1">
+        <af:document title="MDS ADF Application" id="d1">
             <af:form id="f1">
                 <af:panelGridLayout id="pgl1">
                     <af:gridRow height="100%" id="gr1">
                         <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
                             <!-- Content -->
-                            <af:button text="logout" id="b1" action="#{pageFlowScope.MdsBean.logout}"/>
-                            <af:panelSplitter id="ps1">
-                                <f:facet name="first"/>
-                                <f:facet name="second">
-                                    <af:richTextEditor label="Label 1" id="rte1">
-                                        <f:facet name="footer"/>
-                                    </af:richTextEditor>
-                                </f:facet>
-                            </af:panelSplitter>
+                            <af:region value="#{bindings.mainbtf1.regionModel}" id="r1"/>
                         </af:gridCell>
                     </af:gridRow>
                 </af:panelGridLayout>

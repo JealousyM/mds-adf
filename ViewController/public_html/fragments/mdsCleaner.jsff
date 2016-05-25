@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <af:region value="#{bindings.mdscleaner1.regionModel}" id="r1"/>
+  <af:button text="Back" id="b1" action="back"/>
+</jsp:root>

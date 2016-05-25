@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.1.3.2.1" id="DataBindings"
+             SeparateXMLFiles="false" Package="by.perevertkin.mds.view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/mdsCleaner.jspx" usageId="by_perevertkin_mds_view_mdsCleanerPageDef"/>
+    <page path="/index.jspx" usageId="by_perevertkin_mds_view_indexPageDef"/>
+    <page path="/fragments/mdsCleaner.jsff" usageId="by_perevertkin_mds_view_mdsCleanerPageDef1"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="by_perevertkin_mds_view_mdsCleanerPageDef" path="by.perevertkin.mds.view.pageDefs.mdsCleanerPageDef"/>
+    <page id="by_perevertkin_mds_view_indexPageDef" path="by.perevertkin.mds.view.pageDefs.indexPageDef"/>
+    <page id="by_perevertkin_mds_view_mdsCleanerPageDef1" path="fragments.mdsCleanerPageDef"/>
+  </pageDefinitionUsages>
+</Application>

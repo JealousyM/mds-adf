@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:f="http://java.sun.com/jsf/core">
+            
+                            <af:button text="logout" id="b1" action="#{pageFlowScope.MdsBean.logout}"/>
+    <af:button text="MDS Cleaner" id="b2" action="mdsCleaner" immediate="true" useWindow="false"/>
+    <af:panelSplitter id="ps1">
+                                <f:facet name="first"/>
+                                <f:facet name="second">
+                                    <af:richTextEditor label="RTE" id="rte1">
+                                        <f:facet name="footer"/>
+                                    </af:richTextEditor>
+                                </f:facet>
+                            </af:panelSplitter>
+    
+</jsp:root>
